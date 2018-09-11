@@ -1,0 +1,140 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><link rel="preload" href="/gatsby/component---src-layouts-index-js-278d9992c3382dd6940f.js" as="script"/><link rel="preload" href="/gatsby/component---src-posts-post-page-js-25dc2743eb0e43ad29a7.js" as="script"/><link rel="preload" href="/gatsby/path---notes-react-week-1-day-1-1ecbee772277da01d7cf.js" as="script"/><link rel="preload" href="/gatsby/app-8e86a515f376ffe42a60.js" as="script"/><link rel="preload" href="/gatsby/commons-01d811135f8b44843827.js" as="script"/><style data-styled-components="eNsTII etPKSC kZqxHa">
+/* sc-component-id: sc-bdVaJa */
+.eNsTII{background:white;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:space-around;-webkit-justify-content:space-around;-ms-flex-pack:space-around;justify-content:space-around;border-bottom:3px solid #760404;margin-top:20px;} .eNsTII img{height:50px;}
+/* sc-component-id: sc-bwzfXH */
+.etPKSC{background:white;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;alignItems:center;}
+/* sc-component-id: sc-htpNat */
+.kZqxHa{background:white;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:space-evenly;-webkit-justify-content:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;font-size:1rem;}</style><title data-react-helmet="true">Lambda Course Notes</title><meta data-react-helmet="true" name="description" content="Sample"/><meta data-react-helmet="true" name="keywords" content="sample, something"/><style id="gatsby-inlined-css">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:112.5%/1.45em georgia,serif;box-sizing:border-box;overflow-y:scroll}*,:after,:before{box-sizing:inherit}body{color:rgba(0,0,0,.8);font-family:georgia,serif;font-weight:400;word-wrap:break-word;-webkit-font-kerning:normal;font-kerning:normal;-ms-font-feature-settings:"kern","liga","clig","calt";-webkit-font-feature-settings:"kern","liga","clig","calt";font-feature-settings:"kern","liga","clig","calt","kern"}img{max-width:100%;margin:0 0 1.45rem;padding:0}h1{font-size:2.25rem}h1,h2{margin:0 0 1.45rem;padding:0;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h2{font-size:1.62671rem}h3{font-size:1.38316rem}h3,h4{margin:0 0 1.45rem;padding:0;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h4{font-size:1rem}h5{font-size:.85028rem}h5,h6{margin:0 0 1.45rem;padding:0;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h6{font-size:.78405rem}hgroup{margin:0 0 1.45rem;padding:0}ol,ul{margin:0 0 1.45rem 1.45rem;padding:0;list-style-position:outside;list-style-image:none}dd,dl,figure,p{margin:0 0 1.45rem;padding:0}pre{padding:0;font-size:.85rem;line-height:1.42;background:rgba(0,0,0,.04);border-radius:3px;overflow:auto;word-wrap:normal;padding:1.45rem}pre,table{margin:0 0 1.45rem}table{padding:0;font-size:1rem;line-height:1.45rem;border-collapse:collapse;width:100%}fieldset{margin:0 0 1.45rem;padding:0}blockquote{margin:0 1.45rem 1.45rem;padding:0}form,iframe,noscript{margin:0 0 1.45rem;padding:0}hr{margin:0 0 calc(1.45rem - 1px);padding:0;background:rgba(0,0,0,.2);border:none;height:1px}address{margin:0 0 1.45rem;padding:0}b,dt,strong,th{font-weight:700}li{margin-bottom:.725rem}ol li,ul li{padding-left:0}li>ol,li>ul{margin-left:1.45rem;margin-bottom:.725rem;margin-top:.725rem}blockquote :last-child,li :last-child,p :last-child{margin-bottom:0}li>p{margin-bottom:.725rem}code,kbd,samp{font-size:.85rem;line-height:1.45rem}abbr,abbr[title],acronym{border-bottom:1px dotted rgba(0,0,0,.5);cursor:help}abbr[title]{text-decoration:none}td,th,thead{text-align:left}td,th{border-bottom:1px solid rgba(0,0,0,.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding:.725rem .96667rem calc(.725rem - 1px)}td:first-child,th:first-child{padding-left:0}td:last-child,th:last-child{padding-right:0}code,tt{background-color:rgba(0,0,0,.04);border-radius:3px;font-family:SFMono-Regular,Consolas,Roboto Mono,Droid Sans Mono,Liberation Mono,Menlo,Courier,monospace;padding:0;padding-top:.2em;padding-bottom:.2em}pre code{background:none;line-height:1.42}code:after,code:before,tt:after,tt:before{letter-spacing:-.2em;content:" "}pre code:after,pre code:before,pre tt:after,pre tt:before{content:""}@media only screen and (max-width:480px){html{font-size:100%}}</style></head><body><div id="___gatsby"><div data-reactroot="" data-reactid="1" data-react-checksum="1481856535"><!-- react-empty: 2 --><div class="sc-bdVaJa eNsTII" data-reactid="3"><div class="sc-bwzfXH etPKSC" data-reactid="4"><a style="color:white;text-decoration:none;" href="/gatsby/" data-reactid="5"><img src="/gatsby/static/Lambda-course-notes-logo.e6a67a22.png" alt="Lambda course notes logo" data-reactid="6"/></a></div><div class="sc-htpNat kZqxHa" data-reactid="7"><a style="color:black;text-decoration:none;margin:10px;" href="/gatsby/" data-reactid="8">User Interface</a><a style="color:black;text-decoration:none;margin:10px;" href="/gatsby/" data-reactid="9">Front end</a><a style="color:black;text-decoration:none;margin:10px;" href="/gatsby/" data-reactid="10">Back end</a><a style="color:black;text-decoration:none;margin:10px;" href="/gatsby/" data-reactid="11">Computer science</a></div></div><div style="margin:0 auto;max-width:960px;padding:0px 1.0875rem 1.45rem;padding-top:0;" data-reactid="12"><div data-reactid="13"><h1 data-reactid="14">How it works: React Week 1 Day 1 - Functional components I</h1><p data-reactid="15"></p><div data-reactid="16"><p>React is a UI library that is used in various forms to create complex, rich user interfaces. It powers user experiences in a way that is decoupled and unconcerned when and where the data is received.</p>
+<!-- end -->
+<p>Objectives:</p>
+<ul>
+<li>use an html file set up a react environment and mount an application to a target DOM element using React and ReactDOM.render</li>
+<li>use JSX to mount a DOM element and display that element in a web browser</li>
+<li>implement a functional component to render a piece of UI to the screen</li>
+</ul>
+<h2>Setting up a React environment using a single HTML file</h2>
+<p>React takes what we have written, and passes it to this function called <code>React.createElement()</code> which turns our code into DOM elements with all of their appropriate handlers, styles and attributes laid out.</p>
+<p>What we get with react is this idea of <code>composability</code> because all we have to do is think about React elements as smaller pieces of UI, and build out those small pieces of UI in these code blocks we call <code>components</code>.</p>
+<p>Everything you do in react will done through this <code>createElement()</code> method however, as you’ll see in the coming material,this has now been abstracted away from us and we now have the ability to use this new technology called <code>JSX</code> to write out our react elements.</p>
+<ol>
+<li>Create an <code>index.html</code> file with the following scaffolding</li>
+</ol>
+<pre><code>&#x3C;!DOCTYPE html>
+&#x3C;html lang="en">
+
+&#x3C;head>
+  &#x3C;title>Hello World React&#x3C;/title>
+&#x3C;/head>
+
+&#x3C;body>
+  &#x3C;div id="target">&#x3C;/div>
+&#x3C;/body>
+
+&#x3C;script>
+  // Our app goes in between these script tags
+&#x3C;/script>
+
+&#x3C;/html>
+</code></pre>
+<ol start="2">
+<li>Just before the script tags, add in our packages that we need</li>
+</ol>
+<pre><code>&#x3C;script crossorigin src="https://unpkg.com/react@16/umd/react.development.js">&#x3C;/script>
+&#x3C;script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">&#x3C;/script>
+
+&#x3C;script>
+  // Our app goes in between these script tags
+&#x3C;/script>
+</code></pre>
+<ol start="3">
+<li>Create a DOM element using <code>React.createElement()</code> and make an <code>h1</code> element with a <code>class="heading"</code> and some child text <code>Hello world</code> </li>
+</ol>
+<pre><code>&#x3C;script>
+const myElement = React.createElement('h1', {className:'heading'}, 'Hello World');
+&#x3C;/script>
+</code></pre>
+<ol start="4">
+<li>Use the <code>ReactDOM</code> library to target where our application will live, and inject our newly created <code>myElement</code> element using the <code>.render</code> method</li>
+</ol>
+<pre><code>&#x3C;script>
+const myElement = React.createElement('h1', {className:'heading'}, 'Hello World');
+ReactDOM.render(myElement, document.getElementById('target'));
+&#x3C;/script>
+</code></pre>
+<p>Notice we are passing our <code>myElement</code> as the first argument to render and we’re selecting our <code>&#x3C;div id="target">&#x3C;/div></code>. For every single react application you’ll ONLY DO THIS ONE TIME for a single application. Everything else well be built out as a child of this.</p>
+<h3>Challenge</h3>
+<p>Steps to complete this assignment</p>
+<ul>
+<li>create an <code>index.html</code> file</li>
+<li>scaffold out a regular html page and add a <code>&#x3C;div id="target">&#x3C;/div></code> as the container for your application to live.</li>
+<li>pull in the React and ReactDOM packages via CDN/UNPKG</li>
+<li>create a script tag and add the attribute <code>type = “text/javascript”</code> so that you can write your react application inline</li>
+<li>inside your script tag, create your myElement variable and set it equal to the React.createElement() function: <code>const myElement = React.createElement()</code></li>
+<li>Decide what type of element you want rendered to the screen, and what attributes (should have at least 1 className) you want on your element and what children text you’d like your element to display. Pass multiple strings to as children and see what happens.</li>
+<li>finally, mount your element to your wrapper div using <code>ReactDOM.render</code></li>
+</ul>
+<h2>Using JSX to mount a DOM element and display it in a web browser</h2>
+<p>We actually could build out an application using solely the <code>createElement</code> method, but eventually it’ll get really complex, and hard to reason about, as our application scales. This is why React gave us an abstraction on top of this method, called <code>JSX</code>.</p>
+<p><a href="https://reactjs.org/docs/introducing-jsx.html#jsx-represents-objects" title="ReactJS docs: JSX represents objects">React takes your JSX and boils it down through React.createElement() calls</a> that is why it’s important to understand a little bit about this particular method.</p>
+<ol>
+<li>Use something like <code>Babel</code> transpile your JSX into a regular version of JavaScript so that Chrome can read it. To get <code>babel-standalone</code> included into our html file for now, we can simply use the <code>UNPKG</code> cdn to retrieve it.</li>
+</ol>
+<pre><code>&#x3C;script crossorigin src="https://unpkg.com/babel-standalone@6.26.0/babel.js">&#x3C;/script>
+</code></pre>
+<ol start="2">
+<li>Refactor our <code>myElement</code> variable to use <code>JSX</code> instead of <code>React.createElement()</code></li>
+</ol>
+<pre><code>const myElement = React.createElement('h1', {className:'heading'}, 'Hello World');
+
+// becomes
+
+const myElement = &#x3C;h1 className="heading" >Hello World&#x3C;/h1>;
+</code></pre>
+<h3>Challenge</h3>
+<p>From scratch, build out a React application within an HTML file that will mount an header with your name, age and location. Use a <code>&#x3C;style></code> tag to add some CSS and make your profile you just built look nice and pretty.</p>
+<h2>Implementing a functional component to render a piece of UI to the screen</h2>
+<p>Everything we’ll do in React will revolve around components. There are different types of components that we can use, and we’re going to start with the simplest type, the <code>Functional Component</code>. Simply put, we can use basic functions as components. These functions will simply return out some sort of JSX. Which will then be rendered out to the Browser.</p>
+<p>Our most basic of components looks like this. It looks exactly like an anonymous arrow function that we’ve named BasicComponent. In fact, that is literally what this is.</p>
+<pre><code>const BasicComponent = () => &#x3C;h1>Hello World&#x3C;/h1>;
+</code></pre>
+<ol>
+<li>Create a wrapper element <code>App</code> and pass it in to <code>ReactDOM.render</code></li>
+</ol>
+<pre><code>const App = () => (
+  &#x3C;div>
+   // Our components go in between these parent div tags
+  &#x3C;/div>
+);
+
+ReactDOM.render(&#x3C;App />, document.getElementById("root"));
+</code></pre>
+<ol start="2">
+<li>Build out some reusable functional components</li>
+</ol>
+<pre><code>const Header = () => {
+  return &#x3C;h1>Hello From React&#x3C;/h1>;
+};
+
+const BasicInput = () => {
+  return &#x3C;input type="text" placeholder="Change the world, one input at a time" />;
+};
+
+const BasicButton = () => {
+  return &#x3C;button>Click me I'm a button!&#x3C;/button>;
+};
+</code></pre>
+<ol start="3">
+<li>Pass the components into our wrapper <code>&#x3C;App/></code> component and Capitalize the Components</li>
+</ol>
+<pre><code>const App = () => (
+  &#x3C;div>
+    &#x3C;Header />
+    &#x3C;BasicInput />
+    &#x3C;BasicButton />
+  &#x3C;/div>
+);
+</code></pre>
+<h3>Challenge</h3>
+<p>Build out a few pieces of composed components from scratch.</p>
+<p>This is a <a href="https://devhints.io/react" title="by DEVHINTS.IO">React Cheat Sheet</a> and below is another</p>
+<p><img src="https://ibin.co/4BGcJlgplMcW.png" alt="React Cheat Sheet" title="React Cheat Sheet"></p></div></div></div></div></div><script id="webpack-manifest">/*<![CDATA[*/window.webpackManifest={"231608221292675":"app-8e86a515f376ffe42a60.js","88605697669780":"component---src-posts-post-page-js-25dc2743eb0e43ad29a7.js","162898551421021":"component---src-pages-404-js-4503918ea3a16cfcdb75.js","35783957827783":"component---src-pages-index-js-8a6aef0218bcbe696111.js","60335399758886":"path----6214233375dbb0989f82.js","200571381717156":"path---notes-react-week-1-day-1-1ecbee772277da01d7cf.js","132328399636043":"path---notes-react-week-1-day-4-dea399e0a231e0ed847b.js","254883757331785":"path---notes-react-week-1-day-2-656f3135b1c860ccec4f.js","34472714654488":"path---notes-react-week-1-day-3-30506ae3434a2c6c9f32.js","254022195166212":"path---404-a0e39f21c11f6a62c5ab.js","142629428675168":"path---index-ae6acc73eb0975bcc0e2.js","178698757827068":"path---404-html-a0e39f21c11f6a62c5ab.js","114276838955818":"component---src-layouts-index-js-278d9992c3382dd6940f.js"}/*]]>*/</script><script>/*<![CDATA[*/["/gatsby/commons-01d811135f8b44843827.js","/gatsby/app-8e86a515f376ffe42a60.js","/gatsby/path---notes-react-week-1-day-1-1ecbee772277da01d7cf.js","/gatsby/component---src-posts-post-page-js-25dc2743eb0e43ad29a7.js","/gatsby/component---src-layouts-index-js-278d9992c3382dd6940f.js"].forEach(function(s){document.write('<script src="'+s+'" defer></'+'script>')})/*]]>*/</script></body></html>

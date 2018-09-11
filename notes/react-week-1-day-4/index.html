@@ -1,0 +1,260 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><link rel="preload" href="/gatsby/component---src-layouts-index-js-278d9992c3382dd6940f.js" as="script"/><link rel="preload" href="/gatsby/component---src-posts-post-page-js-25dc2743eb0e43ad29a7.js" as="script"/><link rel="preload" href="/gatsby/path---notes-react-week-1-day-4-dea399e0a231e0ed847b.js" as="script"/><link rel="preload" href="/gatsby/app-8e86a515f376ffe42a60.js" as="script"/><link rel="preload" href="/gatsby/commons-01d811135f8b44843827.js" as="script"/><style data-styled-components="eNsTII etPKSC kZqxHa">
+/* sc-component-id: sc-bdVaJa */
+.eNsTII{background:white;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:space-around;-webkit-justify-content:space-around;-ms-flex-pack:space-around;justify-content:space-around;border-bottom:3px solid #760404;margin-top:20px;} .eNsTII img{height:50px;}
+/* sc-component-id: sc-bwzfXH */
+.etPKSC{background:white;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;alignItems:center;}
+/* sc-component-id: sc-htpNat */
+.kZqxHa{background:white;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:space-evenly;-webkit-justify-content:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;font-size:1rem;}</style><title data-react-helmet="true">Lambda Course Notes</title><meta data-react-helmet="true" name="description" content="Sample"/><meta data-react-helmet="true" name="keywords" content="sample, something"/><style id="gatsby-inlined-css">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:112.5%/1.45em georgia,serif;box-sizing:border-box;overflow-y:scroll}*,:after,:before{box-sizing:inherit}body{color:rgba(0,0,0,.8);font-family:georgia,serif;font-weight:400;word-wrap:break-word;-webkit-font-kerning:normal;font-kerning:normal;-ms-font-feature-settings:"kern","liga","clig","calt";-webkit-font-feature-settings:"kern","liga","clig","calt";font-feature-settings:"kern","liga","clig","calt","kern"}img{max-width:100%;margin:0 0 1.45rem;padding:0}h1{font-size:2.25rem}h1,h2{margin:0 0 1.45rem;padding:0;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h2{font-size:1.62671rem}h3{font-size:1.38316rem}h3,h4{margin:0 0 1.45rem;padding:0;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h4{font-size:1rem}h5{font-size:.85028rem}h5,h6{margin:0 0 1.45rem;padding:0;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h6{font-size:.78405rem}hgroup{margin:0 0 1.45rem;padding:0}ol,ul{margin:0 0 1.45rem 1.45rem;padding:0;list-style-position:outside;list-style-image:none}dd,dl,figure,p{margin:0 0 1.45rem;padding:0}pre{padding:0;font-size:.85rem;line-height:1.42;background:rgba(0,0,0,.04);border-radius:3px;overflow:auto;word-wrap:normal;padding:1.45rem}pre,table{margin:0 0 1.45rem}table{padding:0;font-size:1rem;line-height:1.45rem;border-collapse:collapse;width:100%}fieldset{margin:0 0 1.45rem;padding:0}blockquote{margin:0 1.45rem 1.45rem;padding:0}form,iframe,noscript{margin:0 0 1.45rem;padding:0}hr{margin:0 0 calc(1.45rem - 1px);padding:0;background:rgba(0,0,0,.2);border:none;height:1px}address{margin:0 0 1.45rem;padding:0}b,dt,strong,th{font-weight:700}li{margin-bottom:.725rem}ol li,ul li{padding-left:0}li>ol,li>ul{margin-left:1.45rem;margin-bottom:.725rem;margin-top:.725rem}blockquote :last-child,li :last-child,p :last-child{margin-bottom:0}li>p{margin-bottom:.725rem}code,kbd,samp{font-size:.85rem;line-height:1.45rem}abbr,abbr[title],acronym{border-bottom:1px dotted rgba(0,0,0,.5);cursor:help}abbr[title]{text-decoration:none}td,th,thead{text-align:left}td,th{border-bottom:1px solid rgba(0,0,0,.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding:.725rem .96667rem calc(.725rem - 1px)}td:first-child,th:first-child{padding-left:0}td:last-child,th:last-child{padding-right:0}code,tt{background-color:rgba(0,0,0,.04);border-radius:3px;font-family:SFMono-Regular,Consolas,Roboto Mono,Droid Sans Mono,Liberation Mono,Menlo,Courier,monospace;padding:0;padding-top:.2em;padding-bottom:.2em}pre code{background:none;line-height:1.42}code:after,code:before,tt:after,tt:before{letter-spacing:-.2em;content:" "}pre code:after,pre code:before,pre tt:after,pre tt:before{content:""}@media only screen and (max-width:480px){html{font-size:100%}}</style></head><body><div id="___gatsby"><div data-reactroot="" data-reactid="1" data-react-checksum="-800812118"><!-- react-empty: 2 --><div class="sc-bdVaJa eNsTII" data-reactid="3"><div class="sc-bwzfXH etPKSC" data-reactid="4"><a style="color:white;text-decoration:none;" href="/gatsby/" data-reactid="5"><img src="/gatsby/static/Lambda-course-notes-logo.e6a67a22.png" alt="Lambda course notes logo" data-reactid="6"/></a></div><div class="sc-htpNat kZqxHa" data-reactid="7"><a style="color:black;text-decoration:none;margin:10px;" href="/gatsby/" data-reactid="8">User Interface</a><a style="color:black;text-decoration:none;margin:10px;" href="/gatsby/" data-reactid="9">Front end</a><a style="color:black;text-decoration:none;margin:10px;" href="/gatsby/" data-reactid="10">Back end</a><a style="color:black;text-decoration:none;margin:10px;" href="/gatsby/" data-reactid="11">Computer science</a></div></div><div style="margin:0 auto;max-width:960px;padding:0px 1.0875rem 1.45rem;padding-top:0;" data-reactid="12"><div data-reactid="13"><h1 data-reactid="14">How it works: React Week 1 Day 4: Class components II</h1><p data-reactid="15"></p><div data-reactid="16"><p>This module is about the intricicies of how we operate within a React Class Component, how to build out an application that allows you to perform basic operations to a data set, and display changes to that data set to the screen.</p>
+<!-- end -->
+<p>Objectives:</p>
+<ul>
+<li>create, read and update a component's state object</li>
+<li>of  demonstrate two ways to properly use the <code>setState</code> function and describe the rules of it</li>
+<li>implement reusable and nested class components</li>
+</ul>
+<h2>Creating reading and updating a component's state object</h2>
+<p>You can think of state as the data your components need, and the ability your components have to update/access data that would need to be displayed by the component itself. Learning to use the <code>state</code> object and <code>setState</code> function will help you gain an understanding as to why we have React and what it’s really good at doing.</p>
+<p><a href="https://reactjs.org/docs/state-and-lifecycle.html">State and lifecycle explained in the React Docs</a></p>
+<p>If we simply passed down some items to a component via props on an array for example, we wouldn’t really have a way for us to manipulate and update that information as needed.</p>
+<p>React gives us a tool to work with the <code>state</code> object that we put on our constructor function. This tool is called <code>setState</code> and it lives on the <code>Component</code> base-class as a method that we can tap into in order to make changes to state. Note calling setState will for React to trigger an invocation (call) to <code>render</code>. This is how react is reactive. Any time we change our state, our component gets re-rendered and our changes are immediately reflected on the screen.</p>
+<pre><code>class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      [STATE_OBJECT]: ""
+    };
+  }
+
+handleInputChange = (event) => {
+  this.setState({ [STATE_OBJECT]: event.target.value });
+}
+
+render() {
+    return (
+      &#x3C;div>
+        &#x3C;div>{this.state.[STATE_OBJECT]}&#x3C;/div>
+        &#x3C;input
+            type="text"
+            placeholder="change the [STATE_OBJECT]"
+            onChange={this.handleInputChange}
+        />
+      &#x3C;/div>
+    );
+  }
+
+}
+</code></pre>
+<p>This input field is pretty trivial, and demonstrates the use of <code>setState</code> pretty well, however, we’re trying to achieve the idea of <code>reusability</code>. So lets take a look at what happens to our input handler if we bind it to our input in a <code>controlled</code> fashion. One can create state from scratch.</p>
+<pre><code>class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+    };
+  }
+
+  onClickMe = () => {
+    this.setState({message: "Clicked"})
+  }
+
+  render() {
+    return (
+      &#x3C;div className="App">
+        &#x3C;h1>Updating State via `SetState`&#x3C;/h1>
+        &#x3C;p>{this.state.message}&#x3C;/p>
+        &#x3C;button onClick={this.onClickMe}>Click me&#x3C;/button>
+      &#x3C;/div>
+    );
+  }
+}
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(&#x3C;App />, rootElement);
+</code></pre>
+<p>Changing the state of a boolean and conditionally rendering components is when things get interesting.</p>
+<pre><code>class LoginControl extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {isLoggedIn: false};
+  }
+
+  handleLoginClick() {
+    this.setState({isLoggedIn: true});
+  }
+
+  handleLogoutClick() {
+    this.setState({isLoggedIn: false});
+  }
+
+  render() {
+    const isLoggedIn = this.state.isLoggedIn;
+    let button;
+
+    if (isLoggedIn) {
+      button = &#x3C;LogoutButton onClick={this.handleLogoutClick} />;
+    } else {
+      button = &#x3C;LoginButton onClick={this.handleLoginClick} />;
+    }
+
+    return (
+      &#x3C;div>
+        &#x3C;Greeting isLoggedIn={isLoggedIn} />
+        {button}
+      &#x3C;/div>
+    );
+  }
+}
+
+function UserGreeting(props) {
+  return &#x3C;h1>Welcome back!&#x3C;/h1>;
+}
+
+function GuestGreeting(props) {
+  return &#x3C;h1>Please sign up.&#x3C;/h1>;
+}
+
+function Greeting(props) {
+  const isLoggedIn = props.isLoggedIn;
+  if (isLoggedIn) {
+    return &#x3C;UserGreeting />;
+  }
+  return &#x3C;GuestGreeting />;
+}
+
+function LoginButton(props) {
+  return (
+    &#x3C;button onClick={props.onClick}>
+      Login
+    &#x3C;/button>
+  );
+}
+
+function LogoutButton(props) {
+  return (
+    &#x3C;button onClick={props.onClick}>
+      Logout
+    &#x3C;/button>
+  );
+}
+</code></pre>
+<h2>Demonstrating two ways to use setState (and describing its rules)</h2>
+<p><code>setState</code> can be async. There is a step between when we call <code>setState</code> in which our component changes are <code>diffed</code> through a process called <code>reconciliation</code>. Lets say we have a user that types in an input field: (1) User types in input field, (2) Reconciliation, (3) Input Component, (4) setState invoked, (5) Input Component re-renders</p>
+<p>If I had some state that I was expecting to be changed by multiple calls to the <code>setState</code> function, it wouldn’t behave the way that I may have initially intended it to.</p>
+<pre><code>counterByThree = () => {
+  this.setState({ count: this.state.count + 1 });
+  this.setState({ count: this.state.count + 1 });
+  this.setState({ count: this.state.count + 1 });
+};
+</code></pre>
+<p>React will simply ignore a couple of the calls by using this process called batching. This will result in only the last call to setState actually taking place. The solution is using functional setState (the ability to pass a callback function to our setState function).</p>
+<pre><code>counterByThree = () => {
+  this.setState(prevState => ({ count: prevState.count + 1 })),
+    this.setState(prevState => ({ count: prevState.count + 1 })),
+    this.setState(prevState => ({ count: prevState.count + 1 }));
+};
+</code></pre>
+<p>This way solves both of our problems. We have controlled the batching of these calls to <code>setState</code> by returning a <code>Queue</code> of calls in this fashion. We are also reading from the <code>previous copy</code> of state rather than the current copy.</p>
+<h2>Implimenting reusable and nested class components</h2>
+<p>The idea that you could build a single component, and share it all over your application is one that React does really well. Because components can be singular representations of UI, you can achieve reusability rather simply and eloquently. This will help your applications grow and scale in a wonderful way.</p>
+<p>A navigation bar may have a container, and multiple buttons/links, some logo. You’d need to pass these children elements into the navbar container you build right? It’s the same with react, we’ll build some complex piece of UI that we can nest together using the <code>compositional paradigm</code>.</p>
+<p><a href="https://reactjs.org/docs/composition-vs-inheritance.html">Composition and inheritance explained in the React Docs</a></p>
+<p><a href="https://codesandbox.io/s/qvkrx4zm56">https://codesandbox.io/s/qvkrx4zm56</a></p>
+<ol>
+<li>Change the parent of the child to a Class component: (1) Change const to class, (2) Add CCR, (3) Add this to props, (4) console.log(props)</li>
+</ol>
+<pre><code>const City = props => {
+  return (
+    &#x3C;div>
+      {props.city.city}, {props.city.state}{" "}
+      &#x3C;Zips zipList={props.city.zip_codes} />{" "}
+    &#x3C;/div>
+  );
+};
+
+// becomes
+
+class City extends React.Component {
+  constructor(props) {
+    console.log(props);
+    super(props)
+    // this.state goes here
+  }
+  render() {
+  return (
+    &#x3C;div>
+      {this.props.city.city}, {this.props.city.state}{" "}
+      &#x3C;Zips zipList={this.props.city.zip_codes} />{" "}
+    &#x3C;/div>
+  );
+  }
+};
+</code></pre>
+<ol start="2">
+<li>Add zips to the state and console.log under the render function to make sure they're getting passed down</li>
+</ol>
+<pre><code>this.state = {
+      zips: props.city.zip
+    }
+
+render() {
+    console.log(this.state);
+</code></pre>
+<ol start="3">
+<li>Change the child component into a stateless functional component</li>
+</ol>
+<pre><code>import React from "react";
+
+class Zip extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      zips: []
+    };
+  }
+  render() {
+    // Lets build this out together!
+    return &#x3C;div>Zippity&#x3C;/div>;
+  }
+}
+export default Zip;
+
+// becomes
+
+import React from "react";
+
+const Zip = props => {
+    // Lets build this out together!
+    return &#x3C;div>Zippity&#x3C;/div>;
+  }
+
+export default Zip;
+</code></pre>
+<ol start="4">
+<li>Map over the <code>zips</code> in <code>state</code> of the <code>City</code> component</li>
+</ol>
+<pre><code>class City extends React.Component {
+  constructor(props) {
+    console.log(props);
+    super(props);
+    this.state = {
+      zips: props.city.zip
+    };
+  }
+  render() {
+    console.log(this.state);
+    return (
+      &#x3C;div>
+        {this.props.city.city}, {this.props.city.state}{" "}
+        {this.state.zips.map(zip => &#x3C;Zip zipCode={zip} key={zip} />)}
+      &#x3C;/div>
+    );
+  }
+}
+</code></pre>
+<ol start="5">
+<li>return <code>props.zipCode</code> on the <code>Zip</code> component</li>
+</ol>
+<pre><code>const Zip = props => {
+    return &#x3C;div>{props.zipCode}&#x3C;/div>;
+  }
+</code></pre>
+<h4>Here is a <a href="https://www.youtube.com/watch?time_continue=983&#x26;v=zlBDC1-hf-s">recap</a></h4></div></div></div></div></div><script id="webpack-manifest">/*<![CDATA[*/window.webpackManifest={"231608221292675":"app-8e86a515f376ffe42a60.js","88605697669780":"component---src-posts-post-page-js-25dc2743eb0e43ad29a7.js","162898551421021":"component---src-pages-404-js-4503918ea3a16cfcdb75.js","35783957827783":"component---src-pages-index-js-8a6aef0218bcbe696111.js","60335399758886":"path----6214233375dbb0989f82.js","200571381717156":"path---notes-react-week-1-day-1-1ecbee772277da01d7cf.js","132328399636043":"path---notes-react-week-1-day-4-dea399e0a231e0ed847b.js","254883757331785":"path---notes-react-week-1-day-2-656f3135b1c860ccec4f.js","34472714654488":"path---notes-react-week-1-day-3-30506ae3434a2c6c9f32.js","254022195166212":"path---404-a0e39f21c11f6a62c5ab.js","142629428675168":"path---index-ae6acc73eb0975bcc0e2.js","178698757827068":"path---404-html-a0e39f21c11f6a62c5ab.js","114276838955818":"component---src-layouts-index-js-278d9992c3382dd6940f.js"}/*]]>*/</script><script>/*<![CDATA[*/["/gatsby/commons-01d811135f8b44843827.js","/gatsby/app-8e86a515f376ffe42a60.js","/gatsby/path---notes-react-week-1-day-4-dea399e0a231e0ed847b.js","/gatsby/component---src-posts-post-page-js-25dc2743eb0e43ad29a7.js","/gatsby/component---src-layouts-index-js-278d9992c3382dd6940f.js"].forEach(function(s){document.write('<script src="'+s+'" defer></'+'script>')})/*]]>*/</script></body></html>
