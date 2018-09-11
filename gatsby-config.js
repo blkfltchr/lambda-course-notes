@@ -3,7 +3,7 @@ module.exports = {
     title: 'Lambda Course Notes',
     desc: 'Notes on User Interface, Front end, Back end, and Computer Science'
   },
-  pathPrefix: "/gatsby",
+  pathPrefix: "/lambda-course-notes",
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components', 
