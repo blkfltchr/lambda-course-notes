@@ -1,0 +1,62 @@
+{
+  "assetsByChunkName": {
+    "path---notes-react-week-1-day-3": [
+      "path---notes-react-week-1-day-3-30506ae3434a2c6c9f32.js",
+      "path---notes-react-week-1-day-3-30506ae3434a2c6c9f32.js.map"
+    ],
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-8a6aef0218bcbe696111.js",
+      "component---src-pages-index-js-8a6aef0218bcbe696111.js.map"
+    ],
+    "path---": [
+      "path----6214233375dbb0989f82.js",
+      "path----6214233375dbb0989f82.js.map"
+    ],
+    "component---src-posts-post-page-js": [
+      "component---src-posts-post-page-js-25dc2743eb0e43ad29a7.js",
+      "component---src-posts-post-page-js-25dc2743eb0e43ad29a7.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-278d9992c3382dd6940f.js",
+      "component---src-layouts-index-js-278d9992c3382dd6940f.js.map"
+    ],
+    "path---notes-react-week-1-day-4": [
+      "path---notes-react-week-1-day-4-dea399e0a231e0ed847b.js",
+      "path---notes-react-week-1-day-4-dea399e0a231e0ed847b.js.map"
+    ],
+    "path---index": [
+      "path---index-059b208588366c83e60a.js",
+      "path---index-059b208588366c83e60a.js.map"
+    ],
+    "component---src-pages-404-js": [
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
+    ],
+    "commons": [
+      "commons-01d811135f8b44843827.js",
+      "commons-01d811135f8b44843827.js.map"
+    ],
+    "path---404-html": [
+      "path---404-html-a0e39f21c11f6a62c5ab.js",
+      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---notes-react-week-1-day-1": [
+      "path---notes-react-week-1-day-1-1ecbee772277da01d7cf.js",
+      "path---notes-react-week-1-day-1-1ecbee772277da01d7cf.js.map"
+    ],
+    "app": [
+      "app-0172167f7d561b038ca8.js",
+      "build-js-styles.css",
+      "app-0172167f7d561b038ca8.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---404": [
+      "path---404-a0e39f21c11f6a62c5ab.js",
+      "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---notes-react-week-1-day-2": [
+      "path---notes-react-week-1-day-2-656f3135b1c860ccec4f.js",
+      "path---notes-react-week-1-day-2-656f3135b1c860ccec4f.js.map"
+    ]
+  }
+}

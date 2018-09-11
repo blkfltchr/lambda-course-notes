@@ -1,0 +1,306 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><link rel="preload" href="/component---src-layouts-index-js-278d9992c3382dd6940f.js" as="script"/><link rel="preload" href="/component---src-posts-post-page-js-25dc2743eb0e43ad29a7.js" as="script"/><link rel="preload" href="/path---notes-react-week-1-day-3-30506ae3434a2c6c9f32.js" as="script"/><link rel="preload" href="/app-0172167f7d561b038ca8.js" as="script"/><link rel="preload" href="/commons-01d811135f8b44843827.js" as="script"/><style data-styled-components="eNsTII etPKSC kZqxHa">
+/* sc-component-id: sc-bdVaJa */
+.eNsTII{background:white;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:space-around;-webkit-justify-content:space-around;-ms-flex-pack:space-around;justify-content:space-around;border-bottom:3px solid #760404;margin-top:20px;} .eNsTII img{height:50px;}
+/* sc-component-id: sc-bwzfXH */
+.etPKSC{background:white;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;alignItems:center;}
+/* sc-component-id: sc-htpNat */
+.kZqxHa{background:white;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:space-evenly;-webkit-justify-content:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;font-size:1rem;}</style><title data-react-helmet="true">Lambda Course Notes</title><meta data-react-helmet="true" name="description" content="Sample"/><meta data-react-helmet="true" name="keywords" content="sample, something"/><style id="gatsby-inlined-css">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:112.5%/1.45em georgia,serif;box-sizing:border-box;overflow-y:scroll}*,:after,:before{box-sizing:inherit}body{color:rgba(0,0,0,.8);font-family:georgia,serif;font-weight:400;word-wrap:break-word;-webkit-font-kerning:normal;font-kerning:normal;-ms-font-feature-settings:"kern","liga","clig","calt";-webkit-font-feature-settings:"kern","liga","clig","calt";font-feature-settings:"kern","liga","clig","calt","kern"}img{max-width:100%;margin:0 0 1.45rem;padding:0}h1{font-size:2.25rem}h1,h2{margin:0 0 1.45rem;padding:0;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h2{font-size:1.62671rem}h3{font-size:1.38316rem}h3,h4{margin:0 0 1.45rem;padding:0;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h4{font-size:1rem}h5{font-size:.85028rem}h5,h6{margin:0 0 1.45rem;padding:0;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h6{font-size:.78405rem}hgroup{margin:0 0 1.45rem;padding:0}ol,ul{margin:0 0 1.45rem 1.45rem;padding:0;list-style-position:outside;list-style-image:none}dd,dl,figure,p{margin:0 0 1.45rem;padding:0}pre{padding:0;font-size:.85rem;line-height:1.42;background:rgba(0,0,0,.04);border-radius:3px;overflow:auto;word-wrap:normal;padding:1.45rem}pre,table{margin:0 0 1.45rem}table{padding:0;font-size:1rem;line-height:1.45rem;border-collapse:collapse;width:100%}fieldset{margin:0 0 1.45rem;padding:0}blockquote{margin:0 1.45rem 1.45rem;padding:0}form,iframe,noscript{margin:0 0 1.45rem;padding:0}hr{margin:0 0 calc(1.45rem - 1px);padding:0;background:rgba(0,0,0,.2);border:none;height:1px}address{margin:0 0 1.45rem;padding:0}b,dt,strong,th{font-weight:700}li{margin-bottom:.725rem}ol li,ul li{padding-left:0}li>ol,li>ul{margin-left:1.45rem;margin-bottom:.725rem;margin-top:.725rem}blockquote :last-child,li :last-child,p :last-child{margin-bottom:0}li>p{margin-bottom:.725rem}code,kbd,samp{font-size:.85rem;line-height:1.45rem}abbr,abbr[title],acronym{border-bottom:1px dotted rgba(0,0,0,.5);cursor:help}abbr[title]{text-decoration:none}td,th,thead{text-align:left}td,th{border-bottom:1px solid rgba(0,0,0,.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding:.725rem .96667rem calc(.725rem - 1px)}td:first-child,th:first-child{padding-left:0}td:last-child,th:last-child{padding-right:0}code,tt{background-color:rgba(0,0,0,.04);border-radius:3px;font-family:SFMono-Regular,Consolas,Roboto Mono,Droid Sans Mono,Liberation Mono,Menlo,Courier,monospace;padding:0;padding-top:.2em;padding-bottom:.2em}pre code{background:none;line-height:1.42}code:after,code:before,tt:after,tt:before{letter-spacing:-.2em;content:" "}pre code:after,pre code:before,pre tt:after,pre tt:before{content:""}@media only screen and (max-width:480px){html{font-size:100%}}</style></head><body><div id="___gatsby"><div data-reactroot="" data-reactid="1" data-react-checksum="1903372566"><!-- react-empty: 2 --><div class="sc-bdVaJa eNsTII" data-reactid="3"><div class="sc-bwzfXH etPKSC" data-reactid="4"><a style="color:white;text-decoration:none;" href="/" data-reactid="5"><img src="/static/Lambda-course-notes-logo.e6a67a22.png" alt="Lambda course notes logo" data-reactid="6"/></a></div><div class="sc-htpNat kZqxHa" data-reactid="7"><a style="color:black;text-decoration:none;margin:10px;" href="/" data-reactid="8">User Interface</a><a style="color:black;text-decoration:none;margin:10px;" href="/" data-reactid="9">Front end</a><a style="color:black;text-decoration:none;margin:10px;" href="/" data-reactid="10">Back end</a><a style="color:black;text-decoration:none;margin:10px;" href="/" data-reactid="11">Computer science</a></div></div><div style="margin:0 auto;max-width:960px;padding:0px 1.0875rem 1.45rem;padding-top:0;" data-reactid="12"><div data-reactid="13"><h1 data-reactid="14">How it works: React Week 1 Day 2 - Class components I</h1><p data-reactid="15"></p><div data-reactid="16"><p>Class Components are a big part of the React ecosystem because they bring a lot of functionality that we normally don’t get with the React API when using Functional Components.</p>
+<!-- end -->
+<p>Objectives:</p>
+<ul>
+<li>use a class component to render some state data to the DOM</li>
+<li>iterate over a list of of data and generate an array of React Components</li>
+<li>share data between components using state and props</li>
+<li>respond to events triggered by user interaction and handle user input via forms in React</li>
+</ul>
+<h2>Using a class component to render some state data to the DOM</h2>
+<p>The <code>React.Component</code> <em><strong>base</strong></em> class  allows us to tap into what we call the <code>Component Lifecycle</code>. Its methods give us control into how our components work, and if we’d like to use them, we have to build out a class component that extends the <code>React.Component</code> parent class:</p>
+<pre><code>class FooComponent extends React.Component {}
+</code></pre>
+<p>One integral part of creating components as classes is that you have the ability to set up a data object that your component might need to be concerned with by way using <code>state</code> as we call it and setting that object up on our <code>constructor</code> method. Once we have some data that we can render out to the DOM we need a vehicle that will allow us to render that data - this is achieved by returning some sort of JSX from within the life-cycle hook called <code>render</code>.</p>
+<ol>
+<li>Declare your class, and extend the React.Component Base class.</li>
+</ol>
+<pre><code>class FooComponent extends React.Component {
+</code></pre>
+<ol start="2">
+<li>Now we’ll set up our constructor and add state.</li>
+</ol>
+<pre><code>constructor() {
+  super();
+  this.state = {};
+}
+</code></pre>
+<ol start="3">
+<li>Render some UI and don’t forget to return some JSX</li>
+</ol>
+<pre><code>render() {
+  return &#x3C;div>Hello, I am Foo Component&#x3C;/div>;
+}
+</code></pre>
+<p>Our final component should look like this.</p>
+<pre><code>class FooComponent extends React.Component {
+  constructor() { 
+    super();
+    this.state = {};
+  }
+  render() {
+    return &#x3C;div>Hello, I am Foo Component&#x3C;/div>;
+  }
+} 
+</code></pre>
+<ol start="4">
+<li>Now lets add a property to our state data. Define a message property on the state object.</li>
+</ol>
+<pre><code>this.state = { 
+  message: "Hello from App State!!"
+};
+</code></pre>
+<ol start="5">
+<li>Now we have that message on our Component’s state we can use it through interpolation. In our render method lets change the the message that we are currently printing out inside of that <code>div</code> to reference the state object. Remember the <code>this</code> keyword when pointing to an object on the Class constructor.</li>
+</ol>
+<pre><code>render() {
+  return &#x3C;div>{this.state.message}&#x3C;/div>;
+}
+</code></pre>
+<h3>Challenge</h3>
+<p>Lets take the functionality of this class component that we built earlier and extend it just a little bit. Declare a <code>Functional Component</code> called <code>RenderMessage</code> inside this <a href="https://codesandbox.io/s/103jkor46q">CodeSandbox</a>.</p>
+<ul>
+<li>Make sure you declare your Props Object that will be passed into this component.</li>
+<li>Return a <code>div</code> who’s child is <code>props.message</code></li>
+<li>Now inside of the <code>App</code> class pass in that <code>RenderMessage</code> component and pass down a message prop to <code>RenderMessage</code>. This message prop should be set equals to the message property on the state object.</li>
+<li>Once it’s all wired up properly you’ve done it!</li>
+</ul>
+<h2>Iterating over a list of data and generating an array of React Components</h2>
+<p>Lets look at the data we want to represent as DOM elements. We’ll render out a list of <code>Favorite Bands</code>.</p>
+<pre><code>const BandsData = [
+  { bandName: "Modest Mouse" },
+  { bandName: "Led Zeppelin" },
+  { bandName: "The Beatles" },
+  { bandName: "Guster" },
+  { bandName: "Kygo" },
+  { bandName: "Dear and the Headlights" },
+  { bandName: "Grizzly Bear" }
+];
+</code></pre>
+<p>We’ll give this new list to React and let it do it’s magic! This is all done with <code>.map</code>. Lets see the logic of this first before we apply it to a React Component. This should return us an array of <code>JSX</code> elements which are <code>divs</code> with the child of <code>band.bandName</code> interpolated as strings.</p>
+<pre><code>const newListOfData = BandsData.map(band => {
+  return &#x3C;div>{band.bandName}&#x3C;/div>;
+});
+</code></pre>
+<p>Now lets apply this to a React Component.</p>
+<pre><code>const App = () => {
+  return (
+    &#x3C;div className="App">
+      {BandsData.map(band => {
+        return &#x3C;div>{band.bandName}&#x3C;/div>;
+      })}
+    &#x3C;/div>
+  );
+};
+</code></pre>
+<p>To make this work, there a few more steps:</p>
+<ol>
+<li>Take the list and set in on state</li>
+<li>Check your state by console.logging</li>
+<li><code>Map</code> over <code>bands</code> and return all wrapped in <code>divs</code> with <code>band.bandName</code> and <code>band.albumName</code></li>
+<li>Give each child a unique <code>key</code> prop</li>
+</ol>
+<pre><code>import React from "react";
+import ReactDOM from "react-dom";
+
+import "./styles.css";
+
+const BandsData = [
+  { id: 0, bandName: "Led Zeppelin", albumName: "Led Zeppelin II" },
+  { id: 1, bandName: "The Beatles", albumName: "Sgt. Peppers Lonely Heart Clubs Band" },
+  { id: 2, bandName: "Grizzly Bear", albumName: "Veckatimist" }
+];
+
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      name: "music",
+      // Step 1
+      bands: BandsData
+    };
+  }
+  render() {
+      // Step 2
+    console.log(this.state);
+    return (
+      &#x3C;div className="App">
+        &#x3C;h1>My favourite {this.state.name}&#x3C;/h1>
+        // Step 3
+        {this.state.bands.map(band => {
+                // Step 4
+          return &#x3C;div key={band.id}>{band.bandName}: {band.albumName} &#x3C;/div>
+        })}
+      &#x3C;/div>
+    );
+  }
+}
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(&#x3C;App />, rootElement);
+</code></pre>
+<h2>Sharing data between components using state and props</h2>
+<p>We are nothing in React if we can’t pass state around from one component to another. The way that we achieve this is this idea of <code>state to props</code>. Whatever is set on the state of our <code>Components</code> can be shared between components by passing it down as props.</p>
+<p>State is as persistent as long as the component is on the screen, we can use it to hold on to memory for our application. That memory could be any data that we pull in from a server elsewhere, some edits from a submission form or simply just based on Users interacting with your web page.</p>
+<p>Remember that state is just an object that we have access to which lives on the <code>class component</code>'s constructor. What’s great about this state object, is that when it changes our component will re-render. We can also pass whatever data is found on this state object around as props to other components.</p>
+<ol>
+<li>Create a <code>Message</code> component in <code>./components/MessageComponent</code> (steps are the same for the <code>Name</code> component)</li>
+</ol>
+<pre><code>import React from "react";
+
+const Message = props => &#x3C;h1>{props.propsMessage}&#x3C;/h1>;
+
+export default Message;
+
+// Name component
+
+import React from "react";
+
+const Name = props => &#x3C;h1>My name is {props.propsName}&#x3C;/h1>;
+
+export default Name;
+</code></pre>
+<ol start="2">
+<li>Import it with <code>import Message from "./components/MessageComponent";</code></li>
+<li>Add a <code>message</code> to <code>this.state</code></li>
+<li>Bring in the <code>Message</code> component to App and pass down the message with <code>propsMessage={this.state.message}</code> (notice propsMessage is the same as the component above)</li>
+</ol>
+<pre><code>import React from "react";
+import ReactDOM from "react-dom";
+
+import "./styles.css";
+// Step 2
+import Message from "./components/MessageComponent";
+
+class App extends React.Component {
+  constructor() {
+    super();
+    // Step 3
+    this.state = {
+      message: "G'day, monsieur!",
+      name: "Blake"
+    };
+  }
+
+  render() {
+    return (
+      &#x3C;div className="App">
+      // Step 4
+        &#x3C;Message propsMessage={this.state.message} />
+        &#x3C;Name propsName={this.state.name} />
+      &#x3C;/div>
+    );
+  }
+}
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(&#x3C;App />, rootElement);
+</code></pre>
+<p>Remember, state is mutable. You can change it with a function called <code>setState()</code>. This is how it works with an input form</p>
+<ol>
+<li>Change <code>message</code> in state to an empty string</li>
+</ol>
+<pre><code>this.state = {
+      message: "",
+      name: "Blake"
+    };
+</code></pre>
+<ol start="2">
+<li>Create a <code>handleInputChange</code> function that uses <code>setState</code> to set the value of <code>message</code> with whatever is in the input field</li>
+</ol>
+<pre><code>  handleInputChange = event => {
+    this.setState({message: event.target.value})
+  }
+</code></pre>
+<ol start="3">
+<li>Add an <code>input</code> div to App and onChange set it to <code>this.handleInputChange</code> (notice its not in state so it doesn't have this.state)</li>
+</ol>
+<p>Remember, the message component is receiving the changes from this.setState. In the end, the file will look like this:</p>
+<pre><code>import React from "react";
+import ReactDOM from "react-dom";
+
+import "./styles.css";
+import Message from "./components/MessageComponent";
+import Name from "./components/NameComponent";
+
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      message: "",
+      name: "Blake"
+    };
+  }
+
+  handleInputChange = event => {
+    this.setState({message: event.target.value})
+  }
+
+  render() {
+    return (
+      &#x3C;div className="App">
+        &#x3C;Message propsMessage={this.state.message} />
+        &#x3C;Name propsName={this.state.name} />
+        &#x3C;input onChange={this.handleInputChange} />
+      &#x3C;/div>
+    );
+  }
+}
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(&#x3C;App />, rootElement);
+</code></pre>
+<h2>Responding to events triggered by user interaction and handle user input via forms in React</h2>
+<p>In Web development everything you do is based around the <code>Document Object Model (DOM)</code>. The DOM has built into it an event loop that listens for changes across some part of the UI. To access that event loop in the Virtual DOM the react team put together what is called the <code>Synthetic Event</code> so that we can pretty much have access to all the events we would need to provide users with an interactive web application. <em><strong>Learn to harness the power of events in React and you’ll be set to build out React Web Applications.</strong></em></p>
+<p>How do we take in user input via forms, respond to clicks, mouse events and scrolling? Here is a statement straight from the <a href="https://reactjs.org/docs/handling-events.html" title="Handling events">React Docs</a></p>
+<p>Handling events with React elements is very similar to handling events on DOM elements. There are some syntactic differences:</p>
+<ul>
+<li>React events are named using camelCase, rather than lowercase.</li>
+<li>With JSX you pass a function as the event handler, rather than a string.</li>
+</ul>
+<p>Below are three examples of different handlers (<code>onClick</code>, <code>onDoubleClick</code>, <code>onChange</code>) and different outputs (<code>alert</code>, <code>console.log</code>, <code>this.setState</code>)</p>
+<pre><code>import React from "react";
+import ReactDOM from "react-dom";
+
+import "./styles.css";
+
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      someValue: '',
+    }
+  }  
+
+  clickHandler = () => alert("Single Click!");
+  doubleClickHandler = () => console.log("Double Clicked!");
+  changeHandler = event => {
+    this.setState({ someValue: event.target.value });
+  };
+
+  render() {
+    return (
+      &#x3C;div className="App">
+        &#x3C;h1>Hello Handlers&#x3C;/h1>
+        &#x3C;h2>Lets build out some handler functions.&#x3C;/h2>
+        &#x3C;button onClick={this.clickHandler}>Click Handler Demo&#x3C;/button>
+        &#x3C;button onDoubleClick={this.doubleClickHandler}>Double Click Handler&#x3C;/button>
+        &#x3C;input onChange={this.changeHandler} placeholder="Change my input" />
+        &#x3C;p>To get this output: {this.state.someValue}&#x3C;/p>
+      &#x3C;/div>
+    );
+  }
+}
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(&#x3C;App />, rootElement);
+</code></pre>
+<h3>Two projects</h3>
+<p><a href="https://github.com/LambdaSchool/React-Todo">React Todo</a></p>
+<p><a href="https://github.com/LambdaSchool/React-Sorting-Hat">React-Sorting-Hat</a></p></div></div></div></div></div><script id="webpack-manifest">/*<![CDATA[*/window.webpackManifest={"231608221292675":"app-0172167f7d561b038ca8.js","88605697669780":"component---src-posts-post-page-js-25dc2743eb0e43ad29a7.js","162898551421021":"component---src-pages-404-js-4503918ea3a16cfcdb75.js","35783957827783":"component---src-pages-index-js-8a6aef0218bcbe696111.js","60335399758886":"path----6214233375dbb0989f82.js","254883757331785":"path---notes-react-week-1-day-2-656f3135b1c860ccec4f.js","200571381717156":"path---notes-react-week-1-day-1-1ecbee772277da01d7cf.js","34472714654488":"path---notes-react-week-1-day-3-30506ae3434a2c6c9f32.js","132328399636043":"path---notes-react-week-1-day-4-dea399e0a231e0ed847b.js","254022195166212":"path---404-a0e39f21c11f6a62c5ab.js","142629428675168":"path---index-059b208588366c83e60a.js","178698757827068":"path---404-html-a0e39f21c11f6a62c5ab.js","114276838955818":"component---src-layouts-index-js-278d9992c3382dd6940f.js"}/*]]>*/</script><script>/*<![CDATA[*/["/commons-01d811135f8b44843827.js","/app-0172167f7d561b038ca8.js","/path---notes-react-week-1-day-3-30506ae3434a2c6c9f32.js","/component---src-posts-post-page-js-25dc2743eb0e43ad29a7.js","/component---src-layouts-index-js-278d9992c3382dd6940f.js"].forEach(function(s){document.write('<script src="'+s+'" defer></'+'script>')})/*]]>*/</script></body></html>
